@@ -111,3 +111,22 @@ HRESULT CreateLink(char *userPath, char *name, char *desc)
 	free(target);
 	return hres; 
 }
+
+//following code snipt can be used to get command line arguments send when previously created shortcut double clicked.
+//lpszPathObj should contain path to .exe of Program which include following code snipt
+/*
+#include <iostream>
+
+using namespace std;
+
+int main(int argc,char** argv)
+{
+	if(argc >1){
+		cout << argv[1] << endl;
+	}else{
+		cout << "no of arguments are not big enough" << endl;
+	}
+	while(true);
+	return 0;
+}
+*/
